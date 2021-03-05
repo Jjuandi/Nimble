@@ -1,0 +1,372 @@
+img{
+	pointer-events: none;
+}
+
+header{
+	width: 100%;
+	height: 9vh;
+	background: #fff;
+	box-shadow: 0px 0px 4px 1px #0000002b;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+}
+
+header div.content-header{
+	height: 9vh;
+	width: 95%;
+	position: relative;
+	display: flex;
+}
+
+header div.content-header
+div.menu-icon-header{
+	width: 20%;
+	display: flex;
+	align-items: center;
+	font-size: 21px;
+	color: #666;
+}
+
+header div.content-header
+div.menu-icon-header img{
+	height: 5vh;
+	margin-left: 20px;
+}
+
+header div.content-header
+div.search-entrada-content{
+	width: 60%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header div.content-header
+div.search-entrada-content
+div.entrada{
+	width: 70%;
+	background: #fff;
+	height: 38px;
+	overflow: hidden;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	display: flex;
+}
+
+header div.content-header
+div.search-entrada-content
+div.entrada div.span-icon{
+	width: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	color: #bbb;
+}
+
+header div.content-header
+div.search-entrada-content
+div.entrada input{
+	width: 90%;
+	border: none;
+	outline: 0;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+header div.content-header
+div.search-entrada-content
+div.entrada input::placeholder{
+	font-size: 15px;
+	color: #bbb;
+}
+
+header div.content-header
+div.user-options-admin{
+	width: 20%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+header div.content-header
+div.user-options-admin button{
+	margin-right: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Maven Pro', sans-serif;
+	cursor: pointer;
+	outline: 0;
+}
+
+header div.content-header
+div.user-options-admin button span{
+	margin-right: 5px;
+	color: #dc3545;
+	font-size: 20px;
+}
+
+header div.content-header
+div.user-options-admin
+div.phofile-user{
+	width: 34px;
+	height: 34px;
+	border-radius: 100%;
+	overflow: hidden;
+	background: #ccc;
+	position: relative;
+}
+
+header div.content-header
+div.user-options-admin
+div.phofile-user img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+div.dashborad-panel-admin{
+	width: 100%;
+	background: #fff;
+	height: 91vh;
+	overflow: auto;
+	margin-top: 9vh;
+	position: relative;
+	display: flex;
+}
+
+div.dashborad-panel-admin
+div.panel-options{
+	width: 18.5%;
+	height: 91vh;
+	border-right: 1px solid #ccc;
+	position: relative;
+	overflow: auto;
+}
+
+div.dashborad-panel-admin
+div.panel-options div.user-content{
+	width: 100%;
+	min-height: 30vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+div.dashborad-panel-admin
+div.panel-options div.user-content
+div.flex-center{
+	width: 90%;
+	padding: 15px 0;
+}
+
+div.dashborad-panel-admin
+div.panel-options div.user-content
+div.flex-center div.image-user-phofile{
+	width: 15vh;
+	height: 15vh;
+	background: #ccc;
+	border-radius: 100%;
+	overflow: hidden;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+div.dashborad-panel-admin
+div.panel-options div.user-content
+div.flex-center div.image-user-phofile img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+}
+
+div.dashborad-panel-admin
+div.panel-options div.user-content
+div.flex-center span{
+	font-family: 'Maven Pro', sans-serif;
+}
+
+div.dashborad-panel-admin
+div.panel-options div.user-content
+div.flex-center p{
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #444;
+}
+
+div.dashborad-panel-admin
+div.panel-options div.options-content{
+	max-height: 45vh;
+	overflow: auto;
+}
+
+div.dashborad-panel-admin
+div.panel-options div.options-content::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+div.dashborad-panel-admin
+div.panel-options div.options-content::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+div.dashborad-panel-admin
+div.panel-options div.options-content::-webkit-scrollbar-thumb {
+  background-color: #999;
+}
+
+div.dashborad-panel-admin
+div.panel-options div.options-content::-webkit-scrollbar-thumb:hover{
+	background: #777;
+}
+
+div.dashborad-panel-admin
+div.panel-options div.options-content
+div.entrada-button-option, 
+div.footer-options div.entrada-button-option{
+	width: 100%;
+	height: 50px;
+	padding: 10px 25px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+div.dashborad-panel-admin
+div.panel-options div.options-content
+div.entrada-button-option span, 
+div.footer-options div.entrada-button-option span{
+	font-size: 21px;
+	color: #666;
+}
+
+div.dashborad-panel-admin
+div.panel-options div.options-content
+div.entrada-button-option label, 
+div.footer-options div.entrada-button-option label{
+	margin-left: 20px;
+	font-family: 'Maven Pro', sans-serif;
+	color: #666;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+div.dashborad-panel-admin
+div.panel-options div.options-content
+div.entrada-button-option:hover,
+div.footer-options div.entrada-button-option:hover{
+	background: rgba(0,0,0,0.06);
+}
+
+div.dashborad-panel-admin
+div.panel-options div.options-content
+div.option-active, 
+div.footer-options div.entrada-button-option
+ div.option-active{
+	background: rgba(0,0,0,0.06);
+	border-left: 5px solid #e20b20;
+}
+
+div.dashborad-panel-admin
+div.panel-options div.options-content
+div.option-active span, 
+div.footer-options div.entrada-button-option 
+div.option-active span{
+	color: #e20b20;
+}
+
+div.dashborad-panel-admin
+div.panel-options div.footer-options{
+	width: 100%;
+	height: 16vh;
+	border-top: 1px solid #ccc;
+	position: absolute;
+	bottom: 0;
+}
+
+div.panel-complete-admin{
+	width: 81.5%;
+	height: 91vh;
+	overflow: auto;
+	position: relative;
+}
+
+div.panel-complete-admin
+div.dashboard-base{
+	position: relative;
+	width: 100%;
+	min-height: 91vh;
+}
+
+div.panel-complete-admin
+div.panel-dashboard{
+	background: #f4f4f4;
+	padding: 10px 20px;
+}
+
+div.header-title-option{
+	width: 100%;
+	padding: 0 15px;
+	display: flex;
+	align-items: center;
+}
+
+div.header-title-option
+p{
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 25px;
+	width: 75%;
+}
+
+div.options-buttons{
+	width: 25%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+div.options-buttons button{
+	padding: 13px;
+	background: #fff;
+	border-radius: 100%;
+	border: none;
+	outline: 0;
+	cursor: pointer;
+	margin: 5px;
+	color: #777;
+	font-size: 18px;
+}
+
+div.image-user-phofile div.radius-link-user{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+div.image-user-phofile:hover div.radius-link-user{
+	display: flex;
+}

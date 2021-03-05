@@ -1,0 +1,320 @@
+img{
+	pointer-events: none;
+}
+
+div.container-form{
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.container-form img.background{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+div.container-form div.filter-from-background{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	backdrop-filter: blur(15px);
+}
+
+div.container-form div.container-form-complete{
+	width: 80%;
+	min-height: 77vh;
+	position: relative;
+	border-radius: 5px;
+	background: #fff;
+	display: flex;
+	overflow: hidden;
+	margin-top: 50px;
+}
+
+div.container-form div.container-form-complete
+div.content-image-form{
+	position: relative;
+	width: 40%;
+	background: #ccc;
+	box-shadow: 5px 1px 6px 1px #0000007d;
+}
+
+div.container-form div.container-form-complete
+div.content-image-form img{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+}
+
+div.container-form div.container-form-complete
+div.content-image-form img.sombreado{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+div.container-form div.container-form-complete
+div.form-entradas{
+	width: 60%;
+	position: relative;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.container-form div.container-form-complete
+div.form-entradas div.entradas-form{
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-y: scroll;
+	height: 75vh;
+}
+
+div.container-form div.container-form-complete
+div.form-entradas div.entradas-form::-webkit-scrollbar {
+    width: 10px;     /* Tamaño del scroll en vertical */
+    height: 10px;    /* Tamaño del scroll en horizontal */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+div.container-form div.container-form-complete
+div.form-entradas div.entradas-form::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+div.container-form div.container-form-complete
+div.form-entradas div.entradas-form::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+}
+/* Cambiamos el fondo cuando esté en active */
+div.container-form div.container-form-complete
+div.form-entradas div.entradas-form::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+div.container-form div.container-form-complete
+::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+    display: none;
+}
+/* Cambiamos el fondo cuando esté en active o hover */
+div.container-form div.container-form-complete
+::-webkit-scrollbar-track:hover,
+div.container-form div.container-form-complete
+::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+div.container-form div.container-form-complete
+div.form-entradas div.entradas-form section{
+	width: 100%;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 75vh;
+}
+
+div.container-form div.container-form-complete
+div.form-entradas div.entradas-form section p{
+	width: 65%;
+	background: #dc354512;
+	padding: 10px;
+	border-radius: 3px;
+	color: #555;
+	margin-bottom: 15px;
+	font-family: 'Maven Pro', sans-serif;
+	display: none;
+}
+
+div.container-form div.container-form-complete
+div.form-entradas div.entradas-form section div.entrada{
+	width: 80%;
+	height: 50px;
+	display: flex;
+	position: relative;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	border-radius: 5px;
+	margin: 10px 0;
+}
+
+div.container-form div.container-form-complete
+div.form-entradas div.entradas-form section
+div.entrada.is-invalid{
+	border: 2px solid #dc3545;
+}
+
+div.container-form div.container-form-complete
+div.form-entradas div.entradas-form section div.entrada
+div.icon-content{
+	width: 15%;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #555;
+}
+
+
+div.container-form div.container-form-complete
+div.form-entradas div.entradas-form section div.entrada
+input{
+	width: 75%;
+	border: none;
+	outline: 0;
+	padding-right: 10px;
+}
+
+div.container-form div.container-form-complete
+div.form-entradas div.entradas-form section div.entrada
+div.contentVerifi{
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.container-form div.container-form-complete
+div.form-entradas div.entradas-form section
+div.entrada.is-invalid div.contentVerifi{
+	background: #ED213A;
+	background: -webkit-linear-gradient(to right, #93291E, #ED213A);
+	background: linear-gradient(to right, #93291E, #ED213A);
+}
+
+div.container-form div.container-form-complete
+div.form-entradas div.entradas-form section div.entrada
+div.contentVerifi span.despok_icon-checkmark2{
+	color: orange;
+}
+
+div.container-form div.container-form-complete
+div.form-entradas div.entradas-form section div.entrada.is-invalid
+div.contentVerifi span.despok_icon-cross{
+	color: #fff;
+}
+
+div.container-form div.container-form-complete
+div.form-entradas div.entradas-form section hr{
+	width: 40%;
+	margin: 20px;
+	border-top: 1px solid #eee;
+}
+
+div.desc-info-select{
+	width: 100%;
+	padding: 10px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.desc-info-select span{
+	font-size: 15px;
+	margin-left: 10px;
+	color: #777;
+}
+
+div.buttonContent{
+	width: 65%;
+	height: 50px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+div.buttonContent button{
+	color: #fff;
+	font-family: 'Maven Pro', sans-serif;
+	background: #2193b0;
+	background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+	background: linear-gradient(to right, #6dd5ed, #2193b0);
+	width: 200px;
+	border: none;
+	outline: 0;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .5s;
+}
+
+div.buttonContent button:hover{
+	transform: scale(1.03);
+}
+
+header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	height: 65px;
+	display: flex;
+	justify-content: center;
+}
+
+header div.container{
+	width: 90%;
+	position: relative;
+	display: flex;
+}
+
+header div.container div.iconrel{
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+
+header div.container div.iconrel img{
+	height: 50px;
+}
+
+header div.container div.linkRel{
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+header div.container div.linkRel a{
+	font-family: 'Maven Pro', sans-serif;
+	text-decoration: none;
+	margin: 10px;
+	color: #fff;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-size: 15px;
+	border: 1px solid #fff;
+	transition: .5s;
+}
+
+header div.container div.linkRel a:hover{
+	background: #fff;
+	color: #333;
+}
+
+header div.container div.iconrel nav{
+	margin-left: 15px;
+}
+
+header div.container div.iconrel nav a{
+	color: #fff;
+	font-family: 'Maven Pro', sans-serif;
+	margin: 5px;
+	text-decoration: none;
+	font-size: 15px;
+}

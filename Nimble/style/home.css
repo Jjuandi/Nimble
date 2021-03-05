@@ -1,0 +1,286 @@
+body{
+	background: #fff;
+}
+
+div.content-header{
+	width: 100%;
+	min-height: 80vh;
+	background: #ccc;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+
+div.content-header div.content-group{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 70px 0;
+}
+
+div.content-header img.background{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+	filter: brightness(50%);
+}
+
+div.content-header img.sombreado{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+div.content-header div.content-group section{
+	width: 70%;
+	min-height: 100px;
+	position: relative;
+	align-items: center;
+}
+
+div.content-header div.content-group section#section1{
+	display: flex;
+}
+
+div.content-header div.content-group section#section1
+div.contentScript{
+	width: 50%;
+}
+
+div.content-header div.content-group section#section1
+div.contentScript h1{
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 43px;
+	color: #5969e8;
+}
+
+div.content-header div.content-group section#section1
+div.contentScript p{
+	font-size: 15px;
+	margin-top: 10px;
+	color: #fff;
+}
+
+div.content-header div.content-group section#section1
+div.contentScript button{
+	padding: 10px 20px;
+	background: #fff;
+	border: none;
+	outline: 0;
+	margin-top: 10px;
+	font-family: 'Maven Pro', sans-serif;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+div.content-header div.content-group section#section1
+div.entrada-search{
+	width: 50%;
+	padding: 0 20px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	color: #ccc;
+	font-size: 15px;
+}
+
+div.content-header div.content-group section#section1
+div.entrada-search p{
+	width: 80%;
+	font-size: 12px;
+}
+
+div.content-header div.content-group section#section1
+div.entrada-search div.entrada{
+	position: relative;
+	width: 80%;
+	background: blue;
+	height: 50px;
+	display: flex;
+	overflow: hidden;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+div.content-header div.content-group section#section1
+div.entrada-search div.entrada div.icon{
+	background: #fff;
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+	color: #333;
+}
+
+div.content-header div.content-group section#section1
+div.entrada-search div.entrada input{
+	width: 80%;
+	border: none;
+	outline: 0;
+	padding-right: 20px;
+}
+
+div.content-header div.content-group section#section1
+div.entrada-search div.entrada input::placeholder{
+	padding-left: 5px;
+}
+
+div.blog-home-content{
+	width: 100%;
+	min-height: 50vh;
+	padding: 60px 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+div.blog-home-content h2{
+	font-size: 30px;
+	font-family: 'Maven Pro', sans-serif;
+	color: #5969e8;
+}
+
+div.blog-home-content div.content-blogs-all{
+	width: 100%;
+	min-height: 50vh;
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+div.blog-home-content div.content-blogs-all div.card{
+	width: 22%;
+	background: #ccc;
+	height: 50vh;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 1px 3px 7px 1px #00000052;
+	cursor: pointer;
+	transition: .5s;
+	margin: 10px;
+}
+
+div.blog-home-content div.content-blogs-all div.card
+img.background-post{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	filter: brightness(85%);
+}
+
+div.blog-home-content div.content-blogs-all div.card
+img.sombreado{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: .7;
+}
+
+p.title-posting{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	font-family: 'Maven Pro', sans-serif;
+	color: #fff;
+	width: 80%;
+}
+
+div.blog-home-content div.content-blogs-all div.card:hover
+div.info-content-text{
+	opacity: 1;
+}
+
+div.blog-home-content div.content-blogs-all div.card:hover{
+	transform: scale(1.02);
+}
+
+div.blog-home-content div.content-blogs-all div.card
+div.info-content-text{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(7px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 10px;
+	opacity: 0;
+	transition: .5s;
+}
+
+div.blog-home-content div.content-blogs-all div.card
+div.info-content-text section{
+	text-align: center;
+	color: #fff;
+}
+
+div.blog-home-content div.content-blogs-all div.card
+div.info-content-text section h3{
+	font-family: 'Maven Pro', sans-serif;
+	margin-bottom: 10px;
+}
+
+div.blog-home-content div.content-blogs-all div.card
+div.info-content-text section h3 hr{
+	width: 80%;
+}
+
+div.blog-home-content div.content-blogs-all div.card
+div.info-content-text section p{
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+div.blog-home-content div.content-blogs-all div.card
+div.info-content-text div.data-posting{
+	width: 100%;
+	bottom: 0;
+	background: #fff;
+	height: 50px;
+	position: absolute;
+	padding: 0 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.blog-home-content div.content-blogs-all div.card
+div.info-content-text div.data-posting div.dad{
+	color: #888;
+	display: flex;
+	align-items: center;
+	margin: 10px;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 15px;
+}
+
+div.blog-home-content div.content-blogs-all div.card
+div.info-content-text div.data-posting div.dad span{
+	margin-right: 5px;
+}
+
+span.spanM1{
+	color: #fff;
+}
