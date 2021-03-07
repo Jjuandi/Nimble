@@ -370,3 +370,345 @@ div.image-user-phofile div.radius-link-user{
 div.image-user-phofile:hover div.radius-link-user{
 	display: flex;
 }
+
+div.targets-contend-dasboard{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-top: 15px;
+}
+
+div.targets-contend-dasboard div.card{
+	width: 30%;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	padding: 20px;
+	position: relative;
+	margin: 1%;
+}
+
+div.targets-contend-dasboard div.card h3{
+	font-family: 'Roboto', sans-serif;
+}
+
+div.targets-contend-dasboard div.card div.contentImageUser{
+	width: 100%;
+	height: 110px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+div.targets-contend-dasboard div.card div.contentImageUser
+div.imageUser{
+	width: 110px;
+	height: 110px;
+	background: #ccc;
+	border-radius: 100%;
+	overflow: hidden;
+	position: absolute;
+}
+
+div.targets-contend-dasboard div.card div.contentImageUser
+div.imageUser:nth-child(1n){
+	margin-left: -100px;
+	z-index: 3;
+}
+
+div.targets-contend-dasboard div.card div.contentImageUser
+div.imageUser:nth-child(2n){
+	margin-left: 0px;
+	z-index: 2;
+}
+
+div.targets-contend-dasboard div.card div.contentImageUser
+div.imageUser:nth-child(3n){
+	margin-left: 100px;
+	z-index: 1;
+}
+
+div.targets-contend-dasboard div.card div.contentImageUser
+div.imageUser img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+}
+
+div.targets-contend-dasboard div.card div.infoCard{
+	width: 100%;
+	padding: 5px 0;
+	position: relative;
+	margin-top: 20px;
+}
+
+div.targets-contend-dasboard div.card div.infoCard div.content-data{
+	width: 100%;
+	position: relative;
+	display: flex;
+	padding: 3px 0;
+}
+
+div.targets-contend-dasboard div.card div.infoCard div.content-data
+div.title-data{
+	width: 70%;
+}
+
+div.targets-contend-dasboard div.card div.infoCard div.content-data
+div.data-span{
+	width: 30%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+div.targets-contend-dasboard div.card div.infoCard div.content-data
+div.data-span span{
+	font-family: 'Maven Pro', sans-serif;
+}
+
+div.targets-contend-dasboard div.card div.infoCard div.content-data
+div.data-span span span{
+	color: #aaa;
+}
+
+div.targets-contend-dasboard div.card div.infoCard
+div.buttons-goit{
+	width: 100%;
+	margin-top: 15px;
+}
+
+div.targets-contend-dasboard div.card div.infoCard
+div.buttons-goit button{
+	font-size: 15px;
+	font-family: 'Maven Pro', sans-serif;
+	color: #007bff;
+	border: none;
+	background: none;
+	outline: 0;
+	cursor: pointer;
+}
+
+div.card div.usuarios-data{
+	width: 100%;
+	margin-top: 10px;
+}
+
+div.card div.usuarios-data small{
+	font-size: 15px;
+	font-weight: 900;
+}
+
+div.card div.usuarios-data h5{
+	font-size: 35px;
+}
+
+div.card div.usuarios-data span{
+	font-size: 13px;
+}
+
+div.card div.usuarios-data span span{
+	color: orange;
+}
+
+div.card hr{
+	margin: 20px 0;
+	border-top: 0px solid #ccc;
+}
+
+div.card div.usuarios-data p{
+	font-size: 13px;
+	color: #333;
+}
+
+div.card div.usuarios-data div.posteos-top{
+	width: 100%;
+	margin-top: 10px;
+}
+
+div.card div.usuarios-data div.posteos-top div.entrada-post-top{
+	width: 100%;
+	padding: 5px 0;
+	display: flex;
+}
+
+div.card div.usuarios-data div.posteos-top div.entrada-post-top
+div.text-entrada{
+	width: 80%;
+	font-size: 13px;
+	overflow: hidden;
+}
+
+div.card div.usuarios-data div.posteos-top div.entrada-post-top
+div.data-number-cant{
+	width: 20%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 13px;
+	font-family: 'Maven Pro', sans-serif;
+	overflow: hidden;
+}
+
+div.card div.usuarios-data div.posteos-top
+div.buttons-goit{
+	width: 100%;
+	margin-top: 15px;
+}
+
+div.card div.usuarios-data div.posteos-top
+div.buttons-goit button{
+	font-size: 15px;
+	font-family: 'Maven Pro', sans-serif;
+	color: #007bff;
+	border: none;
+	background: none;
+	outline: 0;
+	cursor: pointer;
+}
+
+div.card div.entradas-posteo-data{
+	width: 100%;
+}
+
+div.card div.entradas-posteo-data div.entrada-posteo{
+	display: flex;
+	margin: 10px 0;
+	padding: 0 20px;
+}
+
+div.card div.entradas-posteo-data div.entrada-posteo:hover{
+	background: #eee;
+}
+
+div.card div.entradas-posteo-data div.entrada-posteo
+div.image-content-post{
+	width: 25%;
+	padding: 5px 0;
+	position: relative;
+	display: flex;
+}
+
+div.card div.entradas-posteo-data div.entrada-posteo
+div.image-content-post div.image{
+	position: relative;
+	width: 75%;
+	height: 35px;
+	background: #ccc;
+	overflow: hidden;
+	border-radius: 5px;
+	margin-left: 8px;
+	cursor: pointer;
+}
+
+div.card div.entradas-posteo-data div.entrada-posteo
+div.image-content-post div.image img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+}
+
+div.card div.entradas-posteo-data div.info-entrada-posteo{
+	width: 75%;
+	position: relative;
+}
+
+div.card div.entradas-posteo-data div.info-entrada-posteo
+div.header-title-post{
+	width: 100%;
+	height: 20px;
+	overflow: hidden;
+	font-size: 15px;
+	position: relative;
+}
+
+div.card div.entradas-posteo-data div.info-entrada-posteo
+div.header-title-post::after{
+	content: "...";
+	position: absolute;
+	background: #fff;
+	top: 0;
+	right: 0;
+	height: 100%;
+}
+
+div.card div.entradas-posteo-data div.entrada-posteo:hover
+div.info-entrada-posteo div.header-title-post::after{
+	background: #eee;
+}
+
+div.card div.entradas-posteo-data div.info-entrada-posteo
+div.dates-post-add{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	align-items: flex-end;
+}
+
+div.card div.entradas-posteo-data div.info-entrada-posteo
+div.dates-post-add p{
+	font-size: 12px;
+	width: 33.333%;
+	color: #888;
+}
+
+div.card div.entradas-posteo-data div.info-entrada-posteo
+div.go-it-post-selection{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #eee;
+	top: 0;
+	left: 0;
+	display: none;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+div.card div.entradas-posteo-data div.info-entrada-posteo
+div.go-it-post-selection button{
+	border: none;
+	background: none;
+	outline: 0;
+	margin: 7px;
+	color: #555;
+	cursor: pointer;
+}
+
+div.card div.entradas-posteo-data div.info-entrada-posteo
+div.go-it-post-selection button span{
+	font-size: 18px;
+}
+
+div.card div.entradas-posteo-data div.info-entrada-posteo
+div.go-it-post-selection button:hover{
+	color: #222;
+}
+
+div.card div.entradas-posteo-data div.entrada-posteo:hover
+div.go-it-post-selection{
+	display: flex;
+}
+
+div.card div.buttons-goit{
+	width: 100%;
+	margin-top: 15px;
+}
+
+div.card div.buttons-goit button{
+	font-size: 15px;
+	font-family: 'Maven Pro', sans-serif;
+	color: #007bff;
+	border: none;
+	background: none;
+	outline: 0;
+	cursor: pointer;
+}

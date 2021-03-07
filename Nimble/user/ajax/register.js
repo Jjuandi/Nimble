@@ -3,6 +3,7 @@ $(document).ready(function(){
 	var DATA = $('#formRegister').serialize();
 
 	if (($('#clave').val()) != ($('#claveConfirm').val())){exit;}
+	if (true) {}
 
 		$.ajax({
 			type: "POST",
