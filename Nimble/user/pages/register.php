@@ -1,9 +1,15 @@
+<?php 
+include("../phpfiles/session-data.php");
+if ($_SESSION) {header('Location: ../dashboard/');}else{}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Registrarme </title>
+	<link rel="icon" href="../../pictures/nimble/nimble.png" />
 
 	<!-- Librerías -->
 	<script type="text/javascript" src="../../librerias/jquery-3.4.1.min.js"></script>
@@ -37,7 +43,7 @@
 					</nav>
 				</div>
 				<div class="linkRel">
-					<a href="">Ingresar</a>
+					<a href="login.php">Ingresar</a>
 				</div>
 			</div>
 		</header>
@@ -50,7 +56,7 @@
 				<div class="entradas-form">
 					<section>
 						<center>
-							<form method="POST" id="formRegister" style="display: contents;">
+							<form method="POST" id="formRegister" style="display: contents;" autocomplete="off">
 								<div class="entrada" id="nombreEntrada">
 									<div class="icon-content">
 										<span class="despok_icon-user"></span>

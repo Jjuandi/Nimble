@@ -11,7 +11,7 @@ $(document).ready(function(){
 			data: DATA,
 			success: function(i){
 				if (i == "SUCCESS") {
-					alert("Registrado correctamente");
+					location.href = "../phpfiles/user-direcction.php";
 				}else{
 					alert(i);
 				}

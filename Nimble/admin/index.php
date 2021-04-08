@@ -1,9 +1,16 @@
+<?php 
+include("../user/phpfiles/session-data.php");
+if (!$_SESSION) {header('Location: ../user/pages/login.php');}else{}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Administación</title>
+	<link rel="icon" href="../pictures/nimble/nimble-admin.png" />
 
 		<!-- Librerias Externas -->
 		<link rel="stylesheet" href="../iconos/style.css">
@@ -11,12 +18,24 @@
 		<link rel="stylesheet" type="text/css" href="../iconos/style.css">
 		<script type="text/javascript" src="../librerias/jquery-3.4.1.min.js"></script>
 
+		<!-- Estilos Online [Bootstrap] -->
+		<link href="../librerias/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
 		<!-- Nuestros estilos Globales -->
 		<link rel="stylesheet" href="../style/estilos_globales.css">
 		<link rel="stylesheet" href="../style/fuentes.css">
 
-		<!-- Estilos Home -->
+		<!-- Estilos Home y Brains-->
 		<link rel="stylesheet" href="style/admin.css">
+		<link rel="stylesheet" type="text/css" href="style/brains.css">
+
+		<!-- Estilos Complementos Asy -->
+		<link rel="stylesheet" href="style/users.asy.css">
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="scripts/buttons-fuction.js"></script>
+		<script type="text/javascript" src="scripts/some-functions.js"></script>
+		<script type="text/javascript" src="scripts/ajaxCrudFunctions.js"></script>
 
 </head>
 <body>
@@ -37,7 +56,7 @@
 			<div class="user-options-admin">
 				<button><span class="despok_icon-newspaper"></span>CREAR</button>
 				<div class="phofile-user">
-					<img src="../user/pictures/phofiles/default/esacmin.jpg" alt="admin">
+					<img src="../user/pictures/phofiles/<?php echo $Fotografia ?>" alt="<?php echo $Usuario ?>">
 				</div>
 			</div>
 		</div>
@@ -47,28 +66,28 @@
 			<div class="user-content">
 				<div class="flex-center">
 					<center>
-						<div class="image-user-phofile" title="Ver perfil de usuario">
-							<img src="../user/pictures/phofiles/default/esacmin.jpg" alt="admin">
+						<a href="../user/dashboard/" target="_blank" style="display: contents;"><div class="image-user-phofile" title="Ver perfil de usuario">
+							<img src="../user/pictures/phofiles/<?php echo $Fotografia ?>" alt="<?php echo $Usuario ?>">
 							<div class="radius-link-user">
 								<span class="despok_icon-compass"></span>
 							</div>
-						</div>
+						</div></a>
 						<span>Administración</span>
-						<p>Juan Diego Gómez</p>
+						<p><?php echo $Nombre ?></p>
 					</center>
 				</div>
 			</div>
 			<div class="options-content">
-				<div class="entrada-button-option option-active">
+				<div class="entrada-button-option option-active" id="panelbtn">
 					<span class="despok_icon-magic-wand"></span><label>Panel</label>
 				</div>
-				<div class="entrada-button-option">
+				<div class="entrada-button-option" id="usuariosbtn">
 					<span class="despok_icon-users"></span><label>Usuarios</label>
 				</div>
-				<div class="entrada-button-option">
+				<div class="entrada-button-option" id="analyticsbtn">
 					<span class="despok_icon-stats-bars"></span><label>Analytics</label>
 				</div>
-				<div class="entrada-button-option">
+				<div class="entrada-button-option" id="contenidobtn">
 					<span class="despok_icon-pencil2"></span><label>Contenido</label>
 				</div>
 			</div>
@@ -82,7 +101,7 @@
 			</div>
 		</div>
 		<div class="panel-complete-admin">
-			<div class="dashboard-base panel-dashboard">
+			<div class="dashboard-base panel-dashboard" id="dashboard-base">
 				<div class="header-title-option">
 					<p>Panel de administrador</p>
 					<div class="options-buttons">
@@ -142,7 +161,7 @@
 						<h3>Nuestros usuarios</h3>
 						<div class="contentImageUser">
 							<div class="imageUser">
-								<img src="../user/pictures/phofiles/cata/cata.jpg" alt="Cata">
+								<img src="../user/pictures/phofiles/carlota/carlota.jpg" alt="Cata">
 							</div>
 							<div class="imageUser">
 								<img src="../user/pictures/phofiles/default/userdefault.svg" alt="Juan">
@@ -206,7 +225,6 @@
 									</div>
 								</div>
 							</div>
-
 							<div class="entrada-posteo">
 								<div class="image-content-post">
 									<div class="image">
@@ -233,9 +251,24 @@
 							<button href="">IR A LOS POSTEOS</button>
 						</div>
 					</div>
+					<div class="card">
+						<h3>Comentarios</h3>
+					</div>
+					
+				</div>
+				<div class="footer-content-dashboard">
+					<a href="">Condiciones de uso</a>
+					<a href="">Politica de privacidad</a>
+					<a href="">Politicas y seguridad</a>
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<!-- Elementos de página opcionales -->
+
+	<div class="contentQuestionOthers" id="contentQuestionOthers">
+
 	</div>
 </body>
 </html>

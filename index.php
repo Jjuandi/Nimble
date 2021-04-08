@@ -1,3 +1,7 @@
+<?php 
+include("Nimble/user/phpfiles/session-data.php");
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -14,6 +18,7 @@
 	<!-- Nuestros estilos Globales -->
 		<link rel="stylesheet" href="Nimble/style/estilos_globales.css">
 		<link rel="stylesheet" href="Nimble/style/fuentes.css">
+		<link rel="stylesheet" href="Nimble/iconos/style.css">
 
 	<!-- Estilos Home -->
 		<link rel="stylesheet" href="Nimble/style/home.css">
@@ -21,25 +26,13 @@
 
 	<!-- Scripts Home -->
 		<script type="text/javascript" src="Nimble/script/home.js"></script>
+	 	<script type="text/javascript" src="Nimble/script/globalLoadsBrains.js"></script>
 
 	</head>
 	<body>
+		<header class="session-started" id="headerSession"></header>
+		<header class="inicial-header" id="inicial-header"></header>
 		<div class="content-header">
-			<header class="inicial-header">
-				<div class="contain-header">
-					<nav class="left">
-						<img src="Nimble/pictures/nimble/nimble.png" alt="Nimble">
-						<a href="#">Blog</a>
-						<a href="#">Herramientas</a>
-						<a href="#">Tienda</a>
-						<a href="#">| Terminos de Servicio</a>
-					</nav>
-					<nav class="right">
-						<a href="Nimble/user/pages/register.php">Registrarme</a>
-						<a href="Nimble/user/pages/login.php" class="inice-session">Iniciar sesión</a>
-					</nav>
-				</div>
-			</header>
 			<img src="Nimble/pictures/server-img/question-mark-2492009_1920.jpg" alt="Background" class="background">
 			<img src="Nimble/pictures/others/405-4053283.png" class="sombreado">
 			<div class="content-group">
@@ -54,7 +47,7 @@
 						<p>Por ejemplo: <span class="spanM1"></span></p>
 						<div class="entrada">
 							<div class="icon">
-								<span class="Nimble_icon-search"></span>
+								<span class="despok_icon-search"></span>
 							</div>
 							<input type="text" placeholder="¿Qué quieres encontrar?">
 						</div>
@@ -76,8 +69,8 @@
 							<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Autem veniam, fuga accusantium aperiam error, culpa itaque. Voluptate.</p>
 						</section>
 						<div class="data-posting">
-							<div class="dad"><span class="Nimble_icon-eye"></span>210</div>
-							<div class="dad"><span class="Nimble_icon-calendar"></span>Diciembre 20</div>
+							<div class="dad"><span class="despok_icon-eye"></span>210</div>
+							<div class="dad"><span class="despok_icon-calendar"></span>Diciembre 20</div>
 						</div>
 					</div>
 				</div>
@@ -92,8 +85,8 @@
 							<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit.</p>
 						</section>
 						<div class="data-posting">
-							<div class="dad"><span class="Nimble_icon-eye"></span>210</div>
-							<div class="dad"><span class="Nimble_icon-calendar"></span>Diciembre 20</div>
+							<div class="dad"><span class="despok_icon-eye"></span>210</div>
+							<div class="dad"><span class="despok_icon-calendar"></span>Diciembre 20</div>
 						</div>
 					</div>
 				</div>
@@ -108,8 +101,8 @@
 							<p>Sáquenme de latinoamérica por favor :'v</p>
 						</section>
 						<div class="data-posting">
-							<div class="dad"><span class="Nimble_icon-eye"></span>210</div>
-							<div class="dad"><span class="Nimble_icon-calendar"></span>Diciembre 20</div>
+							<div class="dad"><span class="despok_icon-eye"></span>210</div>
+							<div class="dad"><span class="despok_icon-calendar"></span>Diciembre 20</div>
 						</div>
 					</div>
 				</div>
@@ -124,12 +117,15 @@
 							<p>Lorem ipsum dolor sit Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Ratione, fuga.</p>
 						</section>
 						<div class="data-posting">
-							<div class="dad"><span class="Nimble_icon-eye"></span>210</div>
-							<div class="dad"><span class="Nimble_icon-calendar"></span>Diciembre 20</div>
+							<div class="dad"><span class="despok_icon-eye"></span>210</div>
+							<div class="dad"><span class="despok_icon-calendar"></span>Diciembre 20</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</body>
+<?php 
+if ($_SESSION) {echo "<script>loadHeaderSessionHome()</script>";}else{echo "<script>loadHeaderNotSesionHome()</script>";}
+?>
 </html>

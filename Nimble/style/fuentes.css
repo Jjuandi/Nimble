@@ -1,14 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
 @font-face {
 	font-family: Poppins;
 	src:url(fuentes/Poppins.ttf);
 }
 
+@font-face {
+	font-family: Maven Pro;
+	src:url(fuentes/MavenPro.ttf);
+}
+
+@font-face {
+	font-family: Carter One;
+	src:url(fuentes/CarterOne-Regular.ttf);
+}
+
+@font-face {
+	font-family: Roboto;
+	src:url(fuentes/Roboto-Light.ttf);
+}
+
+@font-face {
+	font-family: digital-7;
+	src:url(fuentes/digital-7.ttf);
+}
+
+@font-face {
+	font-family: PTSans-Regular;
+	src:url(fuentes/PTSans-Regular.ttf);
+}
 
 /* 
+	font-family: 'PTSans-Regular', sans-serif;
+	font-family: 'digital-7', sans-serif;
 	font-family: 'Poppins', sans-serif;
 	font-family: 'Maven Pro', sans-serif;
 	font-family: 'Carter One', cursive;

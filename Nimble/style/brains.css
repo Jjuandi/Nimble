@@ -1,15 +1,17 @@
 header.inicial-header{
 	width: 100%;
-	min-height: 70px;
-	position: absolute;
+	min-height: 60px;
+	position: relative;
 	z-index: 10;
 	top: 0;
-	display: flex;
+	display: none;
 	justify-content: center;
+	background: #fff;
+	border-bottom: 1px solid #ccc;
 }
 
 header.inicial-header div.contain-header{
-	min-height: 70px;
+	min-height: 60px;
 	width: 94%;
 	position: relative;
 	display: flex;
@@ -37,21 +39,373 @@ img{
 
 header.inicial-header div.contain-header nav.left
 a, nav.right a{
-	color: #fff;
-	font-family: 'Maven Pro', sans-serif;
-	margin: 5px;
+	color: #222;
+	margin: 8px;
 	text-decoration: none;
 	font-size: 15px;
+	font-family: 'PTSans-Regular', sans-serif;
 }
 
-a.inice-session{
-	padding: 10px;
-	border-radius: 15px;
-	border: 2px solid #fff;
+nav.right a.inice-session{
+	padding: 10px 15px;
+	border-radius: 5px;
+	background: #ED213A;
+	color: #fff;
 	transition: .5s;
+	font-family: 'PTSans-Regular', sans-serif;
+	position: relative;
+	overflow: hidden;
 }
 
-a.inice-session:hover{
+nav.right a.inice-session::after{
+	content: "";
+	width: 40%;
+	height: 100%;
+	background: rgba(255,255,255,1);
+	filter: blur(5px);
+	position: absolute;
+	top: 0;
+	left: -100%;
+	transform: skewX(50deg);
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+@keyframes mirrorButton{
+	to{
+		left: 130%;
+	}
+}
+
+nav.right a.inice-session:hover{
+	background: #e0102a;
+}
+
+nav.right a.inice-session:hover::after{
+	animation-name: mirrorButton;
+}
+
+a.inice-session span{
+	margin-right: 5px;
+}
+
+/* Header para una sesión iniciada */
+
+header.session-started{
+	width: 100%;
+	height: 8vh;
 	background: #fff;
+	border-bottom: 1px solid #e8e4e4;
+	position: relative;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+}
+
+header.session-started div.container{
+	width: 95%;
+	min-height: 8vh;
+	display: flex;
+}
+
+header.session-started div.container div.iconNav{
+	width: 60%;
+}
+
+header.session-started div.container div.iconNav nav{
+	min-height: 8vh;
+	display: flex;
+	align-items: center;
+}
+
+header.session-started div.container div.iconNav nav img{
+	height: 7vh;
+}
+
+header.session-started div.container div.iconNav nav
+div.contentEntrada{
+	width: 40%;
+	background: #fff;
+	height: 5vh;
+	margin-left: 10px;
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+}
+
+header.session-started div.container div.iconNav nav
+div.contentEntrada div.iconContent{
+	width: 15%;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+}
+
+header.session-started div.container div.iconNav nav
+div.contentEntrada div.iconContent span{
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	padding: 6px;
+}
+
+header.session-started div.container div.iconNav nav
+div.contentEntrada input{
+	width: 85%;
+	outline: 0;
+	border: none;
+	padding-right: 20px;
+}
+
+header.session-started div.container div.iconNav nav a{
+	color: #9a8282;
+	margin: 10px;
+	font-family: 'Maven Pro', sans-serif;
+	text-decoration: none;
+}
+
+header.session-started div.container div.iconNav nav a:hover{
+	color: #565658;
+}
+
+header.session-started div.container div.contentUser{
+	width: 40%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+header.session-started div.container div.contentUser nav{
+	min-height: 8vh;
+	display: flex;
+	align-items: center;
+}
+
+header.session-started div.container div.contentUser nav button{
+	width: 7vh;
+	height: 7vh;
+	font-size: 25px;
 	color: #333;
+	cursor: pointer;
+	background: none;
+	border: none;
+	outline: 0;
+}
+
+header.session-started div.container div.contentUser nav button:hover{
+	color: #555;
+}
+
+header.session-started div.container div.contentUser nav
+div.contentUserData{
+	width: 5vh;
+	height: 5vh;
+	background: #ccc;
+	border-radius: 100%;
+	margin-right: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+header.session-started div.container div.contentUser nav
+div.contentUserData div.divPhofileImage{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #ccc;
+	width: 5vh;
+	height: 5vh;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+header.session-started div.container div.contentUser nav
+div.contentUserData div.divPhofileImage img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+header.session-started div.container div.contentUser nav
+div.contentUserData div.complete-data-user{
+	position: absolute;
+	background: #fff;
+	width: 40vh;
+	min-height: 100px;
+	margin-top: 7.5vh;
+	left: -30vh;
+	box-shadow: 0px 0px 6px 0px #00000036;
+	border-radius: 5px;
+	display: none;
+}
+
+header.session-started div.container div.contentUser nav
+div.contentUserData:hover div.complete-data-user{
+	display: block;
+}
+
+header.session-started div.container div.contentUser nav
+div.contentUserData div.complete-data-user::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	top: -30px;
+	left: 0;
+}
+
+header.session-started div.container div.contentUser nav
+div.contentUserData div.complete-data-user div.header-user-cont{
+	width: 100%;
+	min-height: 100px;
+	position: relative;
+	display: flex;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+background: #ED213A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header.session-started div.container div.contentUser nav
+div.contentUserData div.complete-data-user::before{
+	position: absolute;
+	content: "";
+	width: 25px;
+	height: 25px;
+background: #ED213A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	top: -8px;
+	right: 40px;
+	transform: rotate(45deg);
+	box-shadow: 0px 0px 6px 0px #00000036;
+}
+
+header.session-started div.container div.contentUser nav
+div.contentUserData div.complete-data-user div.header-user-cont
+div.imagePhofile{
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+header.session-started div.container div.contentUser nav
+div.contentUserData div.complete-data-user div.header-user-cont
+div.infoTitle{
+	width: 50%;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+header.session-started div.container div.contentUser nav
+div.contentUserData div.complete-data-user div.header-user-cont
+div.infoTitle div.inf{
+	margin-left: 10px;
+	line-height: 130%;
+}
+
+div.infoTitle div.inf h3{
+	color: #fff;
+}
+
+div.infoTitle div.inf span{
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 15px;
+	color: #eee;
+}
+
+header.session-started div.container div.contentUser nav
+div.contentUserData div.complete-data-user div.header-user-cont
+div.span-user{
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff
+}
+
+header.session-started div.container div.contentUser nav
+div.contentUserData div.complete-data-user div.header-user-cont
+div.imagePhofile div.image-phofile{
+	width: 9.5vh;
+	height: 9.5vh;
+	background: #ccc;
+	overflow: hidden;
+	border-radius: 100%;
+	position: relative;
+	border: 2px solid #fff;
+}
+
+header.session-started div.container div.contentUser nav
+div.contentUserData div.complete-data-user div.header-user-cont
+div.imagePhofile div.image-phofile img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+div.options-buttons-user{
+	width: 100%;
+	position: relative;
+}
+
+div.button-content-option{
+	width: 100%;
+	min-height: 40px;
+	display: flex;
+	align-items: center;
+	font-family: 'Maven Pro', sans-serif;
+	color: #000;
+}
+
+div.button-content-option:hover{
+	background: #eee;
+}
+
+div.button-content-option div.icon-content{
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #333;
+	font-size: 20px;
+}
+
+div.content-min-title{
+	width: 100%;
+	min-height: 30px;
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+	padding-left: 25px;
+}
+
+div.content-min-title:hover{
+	background: #eee;
+}
+
+div.options-buttons-user hr{
+	color: #fbfbfb;
+	border-top: 1px solid;
+}
+
+header.session-started div.container div.contentUser nav
+div.contentUserData div.complete-data-user a{
+	display: contents;
+	text-decoration: none;
+	color: #000;
 }

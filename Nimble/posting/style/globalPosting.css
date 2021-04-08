@@ -1,0 +1,679 @@
+body{
+	background: #f9f6f6;
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-track
+{
+  background-color: #FFF;
+}
+
+body::-webkit-scrollbar
+{
+  width: 10px;
+  background-color: #FFF;
+}
+
+body::-webkit-scrollbar-thumb
+{
+  background-color: #dc3545;
+  border-radius: 3px;
+}
+
+div.content-image-posting{
+	position: relative;
+	width: 100%;
+	min-height: 80vh;
+	background: #ccc;
+	padding: 20px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+div.content-image-posting img.background{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	filter: brightness(60%);
+}
+
+div.content-image-posting img.shadow{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+}
+
+div.content-image-posting div.content-info-title{
+	width: 100%;
+	position: relative;
+	min-height: 100px;
+	display: flex;
+	color: #fff;
+	text-align: right;
+}
+
+div.content-image-posting div.content-info-title {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 15px;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 35px;
+	line-height: 120%;
+	width: 60%;
+	margin-top: 10vh;
+}
+
+div.content-image-posting div.content-info-title
+div.contentTitle div.contentDescrition{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: 15px;
+	line-height: 130%;
+	width: 100%;
+	text-align: right;
+}
+
+div.content-image-posting div.content-info-title
+div.contentTitle div.contentDescrition p{
+	width: 65%;
+}
+
+div.information-posting-contain{
+	width: 100%;
+	min-height: 40vh;
+	position: relative;
+	padding: 30px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div.information-posting-contain div.content-text{
+	min-height: 40vh;
+	width: 75%;
+}
+
+div.information-posting-contain div.content-text
+div.headerInfo-content{
+	width: 100%;
+	min-height: 5vh;
+	position: relative;
+	padding: 0 10px 10px;
+	display: flex;
+}
+
+div.information-posting-contain div.content-text
+div.headerInfo-content div.datas-meta{
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+div.information-posting-contain div.content-text
+div.headerInfo-content div.datas-meta span.author{
+	padding: 5px;
+	background: #f5eeee;
+	border-radius: 5px;
+	color: #b39f9f;
+	font-size: 14px;
+}
+
+div.information-posting-contain div.content-text
+div.headerInfo-content div.datas-meta button{
+background: #ED213A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding: 5px;
+	color: #fff;
+	border-radius: 3px;
+	border: none;
+	margin: 0 5px;
+	cursor: pointer;
+	outline: 0;
+}
+
+div.information-posting-contain div.content-text
+div.headerInfo-content div.datas-meta button span{
+	margin-right: 5px;
+	color: #dc3545;
+}
+
+div.information-posting-contain div.content-text
+div.headerInfo-content div.user-data{
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+div.information-posting-contain div.content-text
+div.headerInfo-content div.user-data p.similar{
+	padding: 5px;
+	background: #f5eeee;
+	border-radius: 5px;
+	color: #b39f9f;
+	font-size: 14px;
+}
+
+div.information-posting-contain div.content-text
+div.headerInfo-content p{
+	font-size: 15px;
+	color: #888;
+	margin: 0 5px;
+}
+
+div.information-posting-contain div.content-text
+div.headerInfo-content p span{
+	margin-right: 5px;
+}
+
+div.information-posting-contain div.content-text
+div.contentInfo-allInfo{
+	width: 100%;
+	min-height: 35vh;
+	background: #fff;
+	padding: 20px;
+}
+
+div.information-posting-contain div.slideContent{
+	width: 23%;
+	min-height: 40vh;
+	background: #fff;
+	position: relative;
+	margin-left: 2%;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+div.panel-news-slider{
+	width: 100%;
+	background: #111;
+	overflow: hidden;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div.panel-news-slider p{
+	font-family: 'digital-7', sans-serif;
+	color: #80d410;
+	display: flex;
+	align-items: center;
+	margin: 10px;
+}
+
+div.panel-news-slider p::selection{
+	color: yellow;
+}
+
+div.panel-news-slider p span{
+	margin-right: 5px;
+}
+
+div.panel-news-slider p img{
+	height: 30px;
+	margin-right: 5px;
+}
+
+div.information-posting-contain div.content-text
+div.authorPosting{
+	width: 100%;
+	margin-top: 20px;
+	position: relative;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	display: flex;
+}
+
+div.information-posting-contain div.content-text
+div.authorPosting div.contentImage{
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 20px;
+}
+
+div.information-posting-contain div.content-text
+div.authorPosting div.contentImage div.content{
+	width: 50px;
+	height: 50px;
+	background: #ccc;
+	border-radius: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+div.information-posting-contain div.content-text
+div.authorPosting div.contentImage div.content img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+div.information-posting-contain div.content-text
+div.authorPosting div.titleAuthor{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	padding: 5px;
+}
+
+div.information-posting-contain div.content-text
+div.authorPosting div.titleAuthor span{
+	font-size: 13px;
+	color: #aaa;
+}
+
+div.information-posting-contain div.content-text
+div.contentInfo-allInfo div.receiveCont p.descripcion{
+	padding: 10px;
+	border-radius: 5px;
+	background: #eee;
+	text-align: center;
+}
+
+div.information-posting-contain div.content-text
+div.contentInfo-allInfo div.receiveCont h1{
+	line-height: 110%;
+	font-size: 40px;
+	margin: 20px;
+}
+
+div.information-posting-contain div.content-text
+div.contentInfo-allInfo div.receiveCont p.complete-text{
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 20px;
+}
+
+div.information-posting-contain div.content-text
+div.contentInfo-allInfo div.receiveCont div.imageContent{
+	width: 80%;
+	position: relative;
+	background: rgba(0,0,0,.1);
+	margin: 30px 0;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+div.information-posting-contain div.content-text
+div.contentInfo-allInfo div.receiveCont div.imageContent
+img{
+	width: 100%;
+	pointer-events: none;
+}
+
+div.information-posting-contain div.content-text
+div.contentInfo-allInfo div.receiveCont div.imageContent
+div.titleAndInfo{
+	width: 100%;
+	padding: 10px 15px;
+	font-size: 15px;
+	text-align: center;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+div.information-posting-contain div.content-text
+div.contentInfo-allInfo div.panelSocialLinks{
+	width: 100%;
+	margin: 30px 0;
+	min-height: 30px;
+	display: flex;
+	justify-content: flex-end;
+	border: 1px solid #999;
+	border-radius: 5px;
+	height: 60px;
+}
+
+div.information-posting-contain div.content-text
+div.contentInfo-allInfo div.panelSocialLinks div.title{
+	width: 40%;
+	background: #ED213A;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	align-items: center;
+	padding: 10px 20px;
+	display: flex;
+	color: #fff;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+div.information-posting-contain div.content-text
+div.contentInfo-allInfo div.panelSocialLinks div.linksButtons{
+	width: 60%;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+div.information-posting-contain div.content-text
+div.contentInfo-allInfo div.panelSocialLinks button{
+	font-size: 20px;
+	margin: 0 5px;
+	background: none;
+	border: none;
+	outline: 0;
+	color: #444;
+	cursor: pointer;
+}
+
+div.information-posting-contain div.content-text
+div.contentInfo-allInfo div.linkCopyPosting{
+	width: 100%;
+	height: 50px;
+	margin: 20px 0;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+div.information-posting-contain div.content-text
+div.contentInfo-allInfo div.linkCopyPosting
+div.entradaInput{
+	width: 70%;
+	background: #fff;
+	overflow: hidden;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	position: relative;
+	display: flex;
+}
+
+div.information-posting-contain div.content-text
+div.contentInfo-allInfo div.linkCopyPosting
+div.entradaInput input{
+	width: 80%;
+	border: none;
+	background: none;
+	padding-left: 20px;
+	background: #ddd;
+}
+
+div.information-posting-contain div.content-text
+div.contentInfo-allInfo div.linkCopyPosting
+div.entradaInput button{
+	width: 20%;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	background: #3498DB;
+	font-family: 'Maven Pro', sans-serif;
+	outline: 0;
+}
+
+div.commentCommunity{
+	width: 100%;
+	margin-top: 20px;
+	min-height: 20vh;
+	position: relative;
+	padding: 0 100px;
+}
+
+div.commentCommunity div.entradaSendComment,
+div.commentCommunity div.comment{
+	width: 100%;
+	display: flex;
+	position: relative;
+	margin: 40px 0;
+}
+
+div.content-alert-sesion span{
+	padding-right: 10px;
+}
+
+div.commentCommunity div.entradaSendComment div.imageContentUser,
+div.commentCommunity div.comment div.imageContentUser{
+	width: 50px;
+	height: 50px;
+	background: #ccc;
+	border-radius: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+div.commentCommunity div.entradaSendComment div.imageContentUser img,
+div.commentCommunity div.comment div.imageContentUser img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+
+div.commentCommunity div.entradaSendComment div.commentInf,
+div.commentCommunity div.comment div.commentInf{
+	width: 90%;
+	position: relative;
+	overflow: hidden;
+}
+
+div.commentCommunity div.entradaSendComment div.commentInf{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+div.commentCommunity div.entradaSendComment div.commentInf textarea{
+	width: 100%;
+	border: none;
+	background: #f9f6f6;
+	border-bottom: 1px solid #ccc;
+	outline: 0;
+	height: 30px;
+	z-index: 5;
+}
+
+div.commentCommunity div.entradaSendComment div.commentInf
+div.content-alert-sesion{
+	width: 100%;
+	background: #f9e4e4;
+	margin: 10px 0;
+	padding: 10px 20px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Maven Pro', sans-serif;
+	border-radius: 5px;
+	border: 1px solid #dc3545;
+	color: #dc3545;
+}
+
+div.commentCommunity div.comment div.commentInf div.namedate{
+	width: 100%;
+	min-height: 25px;
+	display: flex;
+	align-items: center;
+}
+
+div.commentCommunity div.comment div.commentInf div.namedate h4{
+	color: #444;
+}
+
+div.commentCommunity div.comment div.commentInf div.namedate span{
+	margin-left: 10px;
+	font-size: 12px;
+	color: #777;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+div.commentCommunity div.comment div.commentInf div.commentline{
+	width: 100%;
+	min-height: 25px;
+	padding-top: 10px;
+	line-height: 120%;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+div.commentCommunity div.notmorecomments{
+	width: 100%;
+	padding: 0 20px;
+	flex-wrap: wrap;
+	font-size: 13px;
+	color: #222;
+}
+
+div.commentCommunity div.notmorecomments hr{
+	width: 60%;
+	margin: 10px 0;
+	border: 0 none #ccc;
+	border-top: 1px solid #ccc;
+	height: 1px;
+	display: block;
+	clear: both;
+}
+
+div.sliderContent-recommended{
+	width: 100%;
+	position: relative;
+	margin: 20px 0 0;
+	background: #fff;
+	padding: 100px 100px 25px 100px;
+}
+
+div.sliderContent-recommended div.title-content-full{
+	width: 100%;
+	min-height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+div.sliderContent-recommended div.title-content-full hr{
+	width: 100%;
+	margin: 10px 0;
+	border: 2px none #79a3d0;
+	border-top: 2px solid #79a3d0;
+	height: 2px;
+	display: block;
+	clear: both;
+	position: absolute;
+}
+
+div.sliderContent-recommended div.title-content-full h2{
+	position: absolute;
+	background: #fff;
+	color: #79a3d0;
+	padding: 0 20px;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 35px;
+}
+
+div.sliderContent-recommended div.content-target{
+	width: 100%;
+	min-height: 40vh;
+	padding: 50px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+div.contentInfo-moreInfo{
+	width: 100%;
+	min-height: 20vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 100px 10px;
+}
+
+div.contentInfo-moreInfo img{
+	pointer-events: none;
+	width: 100px;
+	margin: 20px;
+}
+
+div.sliderContent-recommended div.content-target div.target{
+	width: 300px;
+	min-height: 300px;
+	background: #eee;
+	position: relative;
+	border-radius: 5px;
+	margin: 15px;
+	overflow: hidden;
+	transition: .5s;
+	cursor: pointer;
+}
+
+div.sliderContent-recommended div.content-target div.target:hover{
+	transform: scale(1.02);
+}
+
+div.sliderContent-recommended div.content-target div.target
+div.headerTarget{
+	width: 100%;
+	height: 170px;
+	background: #ccc;
+	position: relative;
+}
+
+div.sliderContent-recommended div.content-target div.target
+div.headerTarget img.background{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	filter: brightness(50%);
+	pointer-events: none;
+}
+
+div.sliderContent-recommended div.content-target div.target
+div.headerTarget img.shadow{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: .5;
+	pointer-events: none;
+}
+
+div.sliderContent-recommended div.content-target div.target
+div.headerTarget h4{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	color: #fff;
+	line-height: 110%;
+}
+
+div.sliderContent-recommended div.content-target div.target
+div.body-target{
+	width: 100%;
+	min-height: 130px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	text-align: center;
+	color: #222;
+	line-height: 110%;
+}
+
+div.sliderContent-recommended div.content-target div.target
+div.body-target p{
+	color: #444;
+	font-family: 'Maven Pro', sans-serif;
+}

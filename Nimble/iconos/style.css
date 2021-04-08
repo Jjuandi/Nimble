@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'DESPOK';
-  src:  url('DESPOK.eot?wxcam2');
-  src:  url('DESPOK.eot?wxcam2#iefix') format('embedded-opentype'),
-    url('DESPOK.ttf?wxcam2') format('truetype'),
-    url('DESPOK.woff?wxcam2') format('woff'),
-    url('DESPOK.svg?wxcam2#DESPOK') format('svg');
+  font-family: 'despok';
+  src:  url('despok.eot?wxcam2');
+  src:  url('despok.eot?wxcam2#iefix') format('embedded-opentype'),
+    url('despok.ttf?wxcam2') format('truetype'),
+    url('despok.woff?wxcam2') format('woff'),
+    url('despok.svg?wxcam2#despok') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,7 +12,7 @@
 
 [class^="despok_icon-"], [class*=" despok_icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'DESPOK' !important;
+  font-family: 'despok' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;

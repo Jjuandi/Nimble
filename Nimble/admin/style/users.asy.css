@@ -1,0 +1,138 @@
+div.content-all-users{
+	background: #fff;
+	padding: 20px;
+	min-height: 90vh;
+	display: flex;
+	align-items: center;
+}
+
+div.contentCenterTable{
+	width: 100%;
+	position: relative;
+}
+
+div.content-all-users div.contentTable{
+	border: 1px solid #eee;
+	max-height: 40vh;
+	border-radius: 5px;
+	overflow: auto;
+	width: 100%;
+}
+
+div.content-all-users div.contentd-search{
+	width: 100%;
+	margin-bottom: 10px;
+	position: relative;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+div.content-all-users div.contentd-search
+div.content-all{
+	width: 95%;
+	position: relative;
+	display: flex;
+}
+
+div.contentSelect{
+	width: 20%;
+	position: relative;
+	margin-left: 10px;
+	border-radius: 5px;
+	border: 1px solid #eee;
+	overflow: hidden;
+	display: flex;
+}
+
+div.contentSelect div.iconContent{
+	width: 20%;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ccc;
+	font-size: 15px;
+}
+
+div.contentSelect select{
+	width: 80%;
+	border: none;
+	outline: 0;
+	cursor: pointer;
+}
+
+div.content-all button.addUser{
+	position: absolute;
+	right: 0;
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 15px;
+	border-radius: 5px;
+	border: none;
+	outline: 0;
+	font-family: 'Maven Pro', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+background: #ED213A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+div.content-all-users div.contentd-search
+div.content-all div.entradaCampo{
+	width: 40%;
+	background: yellow;
+	height: 50px;
+	position: relative;
+	display: flex;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+div.content-all-users div.contentd-search
+div.content-all div.entradaCampo
+div.iconCampo{
+	width: 15%;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ccc;
+	font-size: 20px;
+}
+
+div.content-all-users div.contentd-search
+div.content-all div.entradaCampo input{
+	width: 85%;
+	border: none;
+	outline: 0;
+	font-size: 15px;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+td button{
+	border-radius: 5px;
+	border: none;
+	outline: 0;
+	color: #fff;
+	width: 35px;
+	height: 35px;
+}
+
+td button:nth-child(1){
+	background: #2193b0;
+	background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+	background: linear-gradient(to right, #6dd5ed, #2193b0);
+}
+
+td button:nth-child(2){
+	background: #ED213A;
+	background: -webkit-linear-gradient(to right, #93291E, #ED213A);
+	background: linear-gradient(to right, #93291E, #ED213A);
+}
